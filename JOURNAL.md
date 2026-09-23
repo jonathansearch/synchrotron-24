@@ -91,3 +91,8 @@
 - 3 batchs IBM (kingston/marrakesh 156q) : batch1 Big Bang (KZ 1.96/0.50, GHZ5 0.93, BV 101) ; batch2 TOUT S01-S06+warp en 1 job (Page S=0.89/0.99, Grover 0.42/0.70/0.42, mur Alcubierre corr 0.994) ; batch3 revanche 100% (T1=230us=fité=props, reset 99%, Bell 0.997, Planck 0.967/ZNE 0.977, écho +23%).
 - Failles trouvées + fixées : dt=4ns (délais batch2 18x trop longs, mea culpa), loterie layout (q121 21%/q146 49% -> fixes q60/(10,11)/(138,151,152)), calibration readout + REM.
 - Dossier : qpu-bigbang/ (circuits, simus, résultats, jobs, figs). Clés JAMAIS commitées (audit pre-push).
+
+## 2026-09-23 — Batch 4 : Collision Topologique et Intrication du Contact ⚛️💥
+- 2 murs tanh (6q) + contact RZZ(lam), marrakesh, 29 pubs : zz 0.03/0.05/0.11/0.08 (témoin libre -0.001, 5-sigma), Page q3 = simu (0.80/0.66 vs 0.75/0.60), écho H 0.014 vs 0.029 (revient 2x mieux). Couplage optimal lam~1.2 (simu), revival au-delà (non-monotonie = vraie physique).
+- REFUTATION HONNETE : beta1-Hamming saturé (~100 partout) -> détecteur aveugle, voir qpu-collision/DETECTEURS_INVALIDES.md. Ticket COLLISION_TANH_QPU CLOS ; NOUVEAUX_DETECTEURS_TOPO OUVERT (Rips/superlevel).
+- Archive : qpu-bigbang/qpu-collision/ + SYNTHESE_4_BATCHS.md. Campagne close, EXPLOITATION ouverte (moissonneur/).
