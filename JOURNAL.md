@@ -104,3 +104,7 @@
 ## 2026-09-23 — Moisson 2 : datasheet v1, 2 backends, cloche confirmée 🌾🌾
 - Lam fin 0.4-1.6 x 5 rondes x marrakesh+kingston (240 pubs, 2 jobs) : zz monotone->plateau (M 0.16, K 0.22 = 88% théorie !) ; Page CLOCHE pic lam~0.8 (0.78, 2 backends identiques, =simu+plancher) ; témoins ~0 ; dérive inter-backend x1.4 (zz) -> calibrage/backend.
 - Points figés : Page@0.8 (métro, sig .005), zz@>=1.2 (détection). Leçons : autocal/session, trigger médiane (ronde l8 bruitée), chaînes forcées+log. DATASHEET v1 + fig_moisson2.
+
+## 2026-09-23 — Quota IBM épuisé + RADAR sim-bruit 🌾📡
+- Job radar kingston coincé QUEUED 2h -> cause : quota mensuel vide (warning officiel), pas backend. Annulé ; re-tiré marrakesh (job_r3b, en file au reset). Leçon : surveiller quota AVANT gros tirs.
+- Radar sim-bruit (vrais modèles K/M, chaînes moisson2) : horizon >= 8L, pic 4L + revival 6L visibles, modèle=87% (K réel) mais optimiste pour M. PROBLEME.md (dosimétrie : P1 opérateurs, P2 radar/microscope, P3 benchmark). Datasheet v2.

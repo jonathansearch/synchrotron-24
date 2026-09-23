@@ -13,3 +13,10 @@ Trigger collecteur : MÉDIANE (pas moyenne : 1 ronde bruitée/5 à l8-M).
 ## REPRODUCTIBILITÉ : n=14 par point fort (3+1 moisson1, 5+5 moisson2),
 2 backends, 3 layouts : formes stables, facteurs backend quantifiés.
 Débit cloud ~2000-2600 shots/s mur (file variable). Chaînes forcées+loggées.
+## RADAR v2 (SIM-BRUIT, attente quota QPU)
+zz(nl) exact : D1 0 D2 .18 D3 .38 D4 .46 D6 .29 D8 .31 (pic 4L + revival).
+Sim-bruit : K 87-99% exact (D4 .40), M ~90% (D4 .41) MAIS hardware-M réel
+était 60% -> modèle OPTIMISTE pour M (calibration périmée ? non-markovien ?).
+HORIZON >= 8L (zz .27 >> plancher .03). Page sature .83->.94 (bruit+brouillage
+indiscernables seuls -> zz = signal mort, Page = métrologie sous le seuil).
+Job radar réel : job_r3b marrakesh en file (quota épuisé 23/09).
