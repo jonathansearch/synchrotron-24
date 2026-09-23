@@ -112,3 +112,6 @@
 ## 2026-09-23 — Route qBraid ouverte (IBM coupé définitivement) 🔑
 - Clé qBraid reçue, SDK validé : 29 appareils, Bell gratuit OK, T0/D4L sur qir-sv = exactes (bit-order qiskit OK).
 - Bloqué : solde 0.00. Canari Rigetti = 34cr. Devis : lite ~460cr ($5), full ~3540cr ($36). Notes : QBRAID.md. En attente recharge user (ou lien OpenQuantum $50 gratuits).
+
+## 2026-09-23 — MICROSCOPE (mort ansatz 0..12L, exact vs bruit K) 🔬
+- zz pic 4L (.46/.40), vivant à 12L (.13/.16), horizon ~14L. MI meurt avant zz (.07 vs .13 à 12L). H exacte creuse 7L (revival), H bruit monte (5.25). Loi : trio (zz,MI,H) obligatoire, Page/H seule ment. Jalon : MICROSCOPE.md + fig. Coût : $0.
