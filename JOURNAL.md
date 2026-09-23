@@ -108,3 +108,7 @@
 ## 2026-09-23 — Quota IBM épuisé + RADAR sim-bruit 🌾📡
 - Job radar kingston coincé QUEUED 2h -> cause : quota mensuel vide (warning officiel), pas backend. Annulé ; re-tiré marrakesh (job_r3b, en file au reset). Leçon : surveiller quota AVANT gros tirs.
 - Radar sim-bruit (vrais modèles K/M, chaînes moisson2) : horizon >= 8L, pic 4L + revival 6L visibles, modèle=87% (K réel) mais optimiste pour M. PROBLEME.md (dosimétrie : P1 opérateurs, P2 radar/microscope, P3 benchmark). Datasheet v2.
+
+## 2026-09-23 — Route qBraid ouverte (IBM coupé définitivement) 🔑
+- Clé qBraid reçue, SDK validé : 29 appareils, Bell gratuit OK, T0/D4L sur qir-sv = exactes (bit-order qiskit OK).
+- Bloqué : solde 0.00. Canari Rigetti = 34cr. Devis : lite ~460cr ($5), full ~3540cr ($36). Notes : QBRAID.md. En attente recharge user (ou lien OpenQuantum $50 gratuits).
