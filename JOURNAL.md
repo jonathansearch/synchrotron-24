@@ -8,3 +8,10 @@
 - Fait saillant : R_global 0.85 → DÉCHIRÉ 0.16 → gel 0.44 ; P_sig
   1.95→0.2→0.9 ; pic marée ×24000 ; F_info 0.79 ; horloges → 0.
 - Figures plot_S01 (9 facteurs) + plot_S01_chute. LOIS.md scellées.
+
+## 2026-09-23 — PRINCIPE DE L'ENFERMEMENT posé (déduction chef)
+- 2 questions chef → gravity = forme déjà-là depuis TEST-04 (convergence
+  centrale) ; trou noir déclaré, pas émergé. Donc : focalisation ≈ gravité
+  exige concentration cohérente → univers ROND, fermé, fini (sinon Φ→0).
+- Scellé : PRINCIPE-ENFERMEMENT.md (mots chef verbatim + reformulation +
+  statut non-testé + piste S02 ouvert-vs-fermé, en attente d'ordre).
