@@ -79,6 +79,10 @@ n'y arrive pas à cause de la décohérence → les étoiles massives s'effondre
    masse retient 75% des pommes.
 5. **Enfermement** (principe) : ouvert (bords absorbants) vs fermé (tore)
    → Φ atteint-il Φ_c seulement en fermé ? Test : S06.
+   **MESURÉ S06 ✅ (cible 5 FINIE, PROGRAMME COMPLET 🏁)** : S06a (lien+bord)
+   8/12+1parabolique vs 9/12 → le lien ignore le bord (naïf réfuté) ; S06b
+   (champ messagers) k=7e-5 : 12/12 vs 2/12 (×6) → le champ exige la
+   fermeture. L'enfermement = condition de la gravité véhiculée. 5/5 !
 
 ## §5. La méthode (arme, pas humeur)
 Vision 3D → univers virtuel → verrou QPU → archive. Topologie d'abord

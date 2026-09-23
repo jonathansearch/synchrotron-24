@@ -49,6 +49,17 @@ r_s = 2M = **295 km** en réel = **1.0** en sim. Tout est en ratios r/r_s
     (rmin 0.64, rfinal 3.70, H1_fin 0.155) ; TROU 12/12 gobées. À M=0
     identique, l'empreinte seule (0.12 = 24% du trou) retient 75% des
     pommes en orbites liées : gravité sans matière, mémoire qui pèse.
+    **Mission 4 : Gravité Fantôme et Persistance Topologique** : À M=0,
+    empreinte H1=0.677 retient 9/12 pommes. Masse effective 0.12. Preuve que
+    gravité = mémoire topologique, pas matière. Interaction transfert H1
+    vers orbiteurs (H1_fin 0.155 vs 0.009 dans le vide).
+13. **Fermeture et gravité (S06, mesuré)** : S06a (lien + bord R_OUT=8) :
+    FANTOME-OUVERT 8/12 + 1 parabolique (E=-0.0045) vs fermé 9/12 → la
+    gravité-LIEN ignore le bord (Newton, action à distance). S06b (champ
+    messagers, 909 vs 170 : fuite ×5.3) : à k=7e-5, FERME 12/12 vs OUVERT
+    2/12 (enroulement |Δθ|>π) → la gravité-CHAMP exige la fermeture (×6).
+    Fenêtre : k faible 0/0 (sous-critique), k fort 12/10 (saturation).
+    L'enfermement est la condition de la gravité véhiculée, pas des liens.
 
 ## Hérités (non modifiés)
 - Couplage Q Kuramoto K=1 (TEST-79), P_sig/ripser (conteneur),

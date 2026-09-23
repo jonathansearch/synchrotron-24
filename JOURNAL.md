@@ -65,3 +65,15 @@
   plongent !) ; TROU 12/12 gobées. Verdict : OUI, l'empreinte pèse (24% de
   la masse retient 75% des pommes). Loi 12 + ticket TROUS_GRAVITENT.
   Fig plot_S05. Cible 4 FINIE !
+- VERDICT DU CHEF (ontologique) : à M=0 ABSOLU, la courbure persiste →
+  gravité = mémoire topologique (H1), pas matière ; espace-temps courbé =
+  état d'information gelée. L'info est un substitut énergétique supérieur
+  (vision POIDS validée). Transfert H1 vers orbiteurs (0.155 vs 0.009) =
+  intrication U médiatrice. Fin du matérialisme : source = Φ_c^sing.
+
+## 2026-09-23 — S06 MESURÉ : la fermeture jugée, PROGRAMME COMPLET ! 🏁✅
+- Mission 5 (ordre chef + Qwen) : S06a (lien+bord) 8/12+1parablique vs 9/12
+  → le LIEN ignore le bord (naïf réfuté). S06b (champ messagers, 909 vs 170)
+  k=7e-5 : 12/12 vs 2/12 (×6 !) → le CHAMP exige la fermeture. Verdict :
+  l'enfermement est la condition de la gravité véhiculée, pas des liens.
+  Loi 13 + ticket GRAVITE_DEPEND_FERMETURE clos. Fig plot_S06. 5/5 CIBLES !

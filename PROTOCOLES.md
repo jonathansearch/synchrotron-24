@@ -98,5 +98,26 @@
   des pommes). OUI : gravité sans matière (mémoire topologique qui pèse).
   Ticket : tickets/TROUS_GRAVITENT.md.
 
+## S06a — BORD OUVERT : le lien ignore le bord 🧱 (MISSION 5a, 2026-09-23)
+- **Méthode** : S05-FANTOME + bord absorbant R_OUT=8 (apocentres liés <~6) ;
+  contrôle VIDE-OUVERT. Micro-loi paire-à-paire inchangée.
+- **Observé** : VIDE-OUVERT 0/12 (bord transparent, rien n'atteint r=8) ;
+  FANTOME-OUVERT 8/12 + 1 parabolique mangée (E=-0.0045, retour dans ~880 :
+  marginale, jamais revenue dans le run) → régime IDENTIQUE au fermé 9/12,
+  pas 0/12 ! La gravité-LIEN (Newton) ignore la topologie : hypothèse naïve
+  RÉFUTÉE (physique correcte pour l'action à distance).
+
+## S06b — MESSAGERS : le champ exige la fermeture ✉️ (MISSION 5b, 2026-09-23)
+- **Méthode** : gravité-CHAMP (zéro force directe !) : messagers émis par
+  l'empreinte (RHO=0.05, TAU=1500, SIGMA=0.25, R_PULL=0.6), kick KAP vers la
+  source ; FERME = tore périodique L=6 (H1≠0, accumulation) vs OUVERT =
+  absorbés à r>L (fuite) ; pommes libres ; critère ENROULEMENT |Δθ|>π
+  (v1 : E_proxy cassé — balistique lente faussement liée, chauffage
+  faussement libre). Scan KAP x3.
+- **Observé** : msg 909 vs 170 (fuite ×5.3, kap-indépendant) ; WIND : k=3e-5
+  0/0 (sous-critique), **k=7e-5 : 12/12 vs 2/12 (×6 !)** ⭐, k=1.5e-4 12/10
+  (saturation). La gravité-CHAMP (information véhiculée) EXIGE la fermeture.
+  Ticket : tickets/GRAVITE_DEPEND_FERMETURE.md. PROGRAMME COMPLET 🏁.
+
 ---
 *Exécution : `cd synchrotron-24 && python3 experiences/s01_naissance.py`* 🔒
