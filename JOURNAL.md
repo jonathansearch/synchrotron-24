@@ -58,3 +58,10 @@
   SIGNE + comme le vrai univers ! Ralentissement critique (t 8→240),
   chaos d'arrondi au fil. Course mémoire : RIPs rapides figent l'anneau
   (H1→36), lents le tuent. Loi 11 + ticket LAMBDA_FANTOME. Fig plot_S04.
+
+## 2026-09-23 — S05 MESURÉ : le fantôme pèse, gravité sans matière ! 👻✅
+- Mission 4 : passé commun 12/12 gobés (M_fantôme=0.12, H1=0.677), 3 présents,
+  pommes appariées. VIDE 0/12 liées (fuite) ; FANTOME 9/12 LIÉES (rmin 0.64,
+  plongent !) ; TROU 12/12 gobées. Verdict : OUI, l'empreinte pèse (24% de
+  la masse retient 75% des pommes). Loi 12 + ticket TROUS_GRAVITENT.
+  Fig plot_S05. Cible 4 FINIE !

@@ -85,5 +85,18 @@
   rapide sauve la mémoire. Transition chaotique 0.045-0.06.
   Ticket : tickets/LAMBDA_FANTOME.md.
 
+## S05 — FANTÔME : les trous gravitent SANS matière 👻🍎 (MISSION 4, 2026-09-23)
+- **Méthode** : passé COMMUN (batch-1 : 12 qubits recette S01 gobés 12/12
+  par M=0.5, gelés, masse 0.01 chacun = EMPREINTE, H1=0.677) ; puis 3
+  présents : VIDE (M=0, rien), FANTOME (M=0 + empreinte), TROU (M=0.5 +
+  empreinte). Batch-2 : 12 pommes, recette S01, seed IDENTIQUE (appariées).
+  Gel r<1 seulement si M>0 (pas d'horizon sans masse, déclaré).
+- **Observé** : VIDE 0/12 liées (rmin 2.79, rfinal 4.70 : fuite) ; FANTOME
+  9/12 LIÉES (rmin 0.64 : plongent ! rfinal 3.70 : restent ! H1_fin 0.155 :
+  mini-trou gardé) ; TROU 12/12 gobées. Mêmes M=0 des deux côtés VIDE/
+  FANTOME → l'effet est PUR (l'empreinte 0.12 = 24% du trou retient 75%
+  des pommes). OUI : gravité sans matière (mémoire topologique qui pèse).
+  Ticket : tickets/TROUS_GRAVITENT.md.
+
 ---
 *Exécution : `cd synchrotron-24 && python3 experiences/s01_naissance.py`* 🔒

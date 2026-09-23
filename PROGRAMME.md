@@ -73,6 +73,10 @@ n'y arrive pas à cause de la décohérence → les étoiles massives s'effondre
    la chute des suivants change-t-elle ? Tranche : oui = gravité sans
    matière (mémoire topologique) ; non = la topologie seule ne pèse pas.
    Test : S05.
+   **MESURÉ S05 ✅ (cible 4 FINIE)** : empreinte 12/12 (H1=0.677, M=0.12) ;
+   VIDE 0/12 liées (fuite) vs FANTOME 9/12 LIÉES (rmin 0.64 !) à M=0
+   identique ; TROU 12/12 gobées. OUI : gravité sans matière, 24% de la
+   masse retient 75% des pommes.
 5. **Enfermement** (principe) : ouvert (bords absorbants) vs fermé (tore)
    → Φ atteint-il Φ_c seulement en fermé ? Test : S06.
 

@@ -43,6 +43,12 @@ r_s = 2M = **295 km** en réel = **1.0** en sim. Tout est en ratios r/r_s
     comme le vrai univers), crayon 0.1125 réfuté x50. Ralentissement
     critique t_RIP 8→240 + chaos d'arrondi. RIPs rapides (≥0.09) figent
     l'anneau (H1→20-36), lents le tuent : la fuite sauve la mémoire.
+12. **Fantôme qui pèse (S05, mesuré)** : batch-1 gobé 12/12 (gelé, 0.01
+    chacun, H1_empreinte=0.677) ; M retiré (0) vs gardé (0.5) ; batch-2
+    apparié. VIDE 0/12 liées (rmin 2.79, fuite) ; FANTOME 9/12 LIÉES
+    (rmin 0.64, rfinal 3.70, H1_fin 0.155) ; TROU 12/12 gobées. À M=0
+    identique, l'empreinte seule (0.12 = 24% du trou) retient 75% des
+    pommes en orbites liées : gravité sans matière, mémoire qui pèse.
 
 ## Hérités (non modifiés)
 - Couplage Q Kuramoto K=1 (TEST-79), P_sig/ripser (conteneur),
