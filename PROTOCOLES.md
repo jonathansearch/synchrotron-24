@@ -48,5 +48,23 @@
   ré-expansion complète reste un S03b optionnel).
   Ticket : tickets/REBOND_PLANCK.md (clôt la Q2 : oui, ça rebondit).
 
+## S03b — RÉSURRECTION : le Big Bang arrive-t-il ? OUI (match retour, 2026-09-23)
+- **Méthode** : TOUT au même point (boule eps=0.1, 40x < anneau S03),
+  micro-loi S03 inchangée, SANS friction, dt=0.002 (le Bang c'est violent),
+  bits alternés + flip au contact (r<0.3, p=0.1, seed fixe). GR = témoin.
+- **Observé Planck (LE BANG)** : r 0.1→343 (x2600 !), H1 0.005→60.9 (née du
+  néant), H=1/t au millième (H.t=1.00 : Hubble ÉMERGE, non codée !),
+  H1/r=0.178 constant (expansion HOMOTHÉTIQUE : garde sa forme),
+  rho en 1/t³ exact, 12/12 secteurs dès t=1 (renaît ROND 🌍), F figé à 0.46
+  (brouillé puis figé par l'expansion), d_min→32 (zéro fusion), 24/24 bits.
+- **Observé GR (témoin, pas de Bang)** : noyau fusionné r~0.3 (H négatif par
+  moments = re-contraction !), H1=0.00 tout du long (mort-né), r_rms gonflé
+  par crachats (2-4/12 secteurs = jets, pas rond), d_min→0.0015 (les qubits
+  SE COLLENT !), F touillé 0.33-0.58 (bits tripotés dans la fournaise).
+- **Verdict** : le point zéro Planck EXPLOSE en univers rond en expansion de
+  Hubble avec structure émergente ; le point zéro GR fusionne et crache.
+  Rien ne se perd (24/24 bits des deux côtés) mais GR colle, Planck envole.
+  Ticket : tickets/RESURRECTION_BIGBANG.md (TOUS les détails).
+
 ---
 *Exécution : `cd synchrotron-24 && python3 experiences/s01_naissance.py`* 🔒

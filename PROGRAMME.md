@@ -58,6 +58,10 @@ n'y arrive pas à cause de la décohérence → les étoiles massives s'effondre
    **MESURÉ S03 ✅ (cible 2)** : GR traverse (r 4→0.54→3.9, H1→0.000,
    amnésie) ; Planck stoppe à r=0.77 (rho~12.5≈rho_crit/2, H1~0.1-0.18).
    r_min > 0 côté Planck = ressort, pas de singularité = rebond (v1).
+   **MATCH RETOUR S03b ✅** : point zéro lâché → Planck EXPLOSE (r→343,
+   H1 0→61, H.t=1.00 Hubble émergente, homothétique, ROND 12/12, F figé
+   0.46, 24/24 bits) ; GR fusionne (d_min 0.0015, H1=0.00, jets). LE BANG
+   ARRIVE côté Planck : cible 2 complète (stop S03 + Bang S03b).
 3. **Λ / poids** : tore fermé sans trou noir, Φ global libre → quelle
    répulsion effective stabilise Φ ? Tranche : signe et ordre de grandeur
    de notre Λ. Test : S04.

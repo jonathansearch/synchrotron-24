@@ -43,3 +43,10 @@
   v1 sans friction annulée (orbites, centrifuge). Verdict : pas de point
   zéro côté Planck = rebond (v1), NON-DÉBUT en piste. Loi 9 + ticket
   REBOND_PLANCK (clôt Q2). Fig plot_S03.
+
+## 2026-09-23 — S03b MESURÉ : RÉSURRECTION, le Bang arrive ! 💥✅
+- Match retour : point zéro lâché. Planck : r→343, H1 0→61, H.t=1.00 EXACT
+  (Hubble émerge !), homothétique H1/r=0.178, 1/t³, ROND 12/12, F figé 0.46,
+  24/24 bits, 0 fusion. GR : noyau fusionné (d_min 0.0015 !), H1=0.00, jets
+  2-4/12, F touillé. Verdict : Planck EXPLOSE, GR colle. Loi 10 + ticket
+  RESURRECTION_BIGBANG (détails complets). Fig plot_S03b. Mission 2 finie !

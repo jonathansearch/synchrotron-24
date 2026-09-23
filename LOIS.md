@@ -29,6 +29,13 @@ r_s = 2M = **295 km** en réel = **1.0** en sim. Tout est en ratios r/r_s
    Planck : chute stoppée à r=0.77, rho plafonnée ~12.5, H1~0.1-0.18
    (mémoire miniature survivante). Un coeur répulsif à l'échelle r_eq
    interdit la singularité : densité finie + mémoire = rebond (v1).
+10. **Résurrection / Big Bang (S03b, mesuré)** : point zéro (eps=0.1),
+    micro-loi S03, sans friction. Planck : r 0.1→343, H1 0→60.9, H=1/t
+    (H.t=1.00, Hubble émergente), H1/r=0.178 constant (homothétique),
+    rho ∝ 1/t³, rond 12/12, bits F figé 0.46, 24/24 lisibles, d_min→32.
+    GR : noyau fusionné (d_min 0.0015), H1=0.00, jets 2-4/12, F 0.33-0.58.
+    Le point zéro avec coeur répulsif EXPLOSE en univers rond de Hubble ;
+    sans coeur il fusionne et crache. Rien ne se perd (24/24 bits partout).
 
 ## Hérités (non modifiés)
 - Couplage Q Kuramoto K=1 (TEST-79), P_sig/ripser (conteneur),
