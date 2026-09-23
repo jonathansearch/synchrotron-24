@@ -15,3 +15,11 @@
   exige concentration cohérente → univers ROND, fermé, fini (sinon Φ→0).
 - Scellé : PRINCIPE-ENFERMEMENT.md (mots chef verbatim + reformulation +
   statut non-testé + piste S02 ouvert-vs-fermé, en attente d'ordre).
+
+## 2026-09-23 — PROGRAMME scellé (tout le dossier intégré, avant exécution)
+- Vision ballon/rebond/digestion/poids/trou-blanc + 3 problèmes (Φ_c^sing,
+  Info↔Berry, temps=flux) + architecture sphère+tore/H1-mémoire.
+- Mes 4 cibles répondues-reformulées : Page (S02), rebond (S03), Λ (S04),
+  trous-gravitent (S05) — avec tranchements oui/non. AUCUN ordonné.
+- Fichier : PROGRAMME.md. Détails du chef intégrés verbatim (poids,
+  digestion, perçage). En attente : ordre cible par cible.
