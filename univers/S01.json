@@ -1,0 +1,1 @@
+{"DT": 0.02, "KQ": 1.0, "M_phys": "100 M_sol", "M_sim": 0.5, "N": 24, "T": 2500, "commentaire": "config S01 : naissance + absorption totale", "epsilon": 0.2, "graine": 24, "inward": 0.05, "kappa": 0.2, "message_bits": 64, "r_init": "12x[2,3.5] + 12x[4,6]", "r_s": 1.0, "r_s_km": 295, "vcirc_fract": 0.35}
