@@ -33,5 +33,20 @@
   Hawking confondait les deux régimes : topologie (conserve) vs énergie
   (dissipe). Ticket : tickets/DISSOCIATION_MASSE_INFO.md.
 
+## S03 — Rebond de Planck vs effondrement GR : KO de la singularité 🥊
+  (CIBLE 2, 2026-09-23)
+- **Méthode** : anneau N=24 (R=4, tatouage H1~5.7), chute radiale,
+  micro-loi par paires F=-g/r²+k/r⁴ (k=0 GR / k=G·r_eq² Planck,
+  r_eq=0.6, rho_crit~26.5 déclarées) + friction γ=0.5 (relaxation
+  violente ; v1 sans friction : orbites centrifuges, rho<rho_crit,
+  combat annulé — cf. S01). Le point de chute ÉMERGE, pas codé.
+- **Observé** : GR traverse le centre (r 4→0.54→3.9) en PULVÉRISANT
+  l'anneau : H1 5.75→0.000, ré-expansion amnésique. Planck STOPPE la
+  chute à r=0.77, densité plafonnée rho~12.5 (≈rho_crit/2), mini-tatouage
+  H1~0.1-0.18 (>10× GR). Pas de singularité côté Planck : l'effondrement
+  est stoppé à densité finie avec mémoire survivante = rebond (v1 : la
+  ré-expansion complète reste un S03b optionnel).
+  Ticket : tickets/REBOND_PLANCK.md (clôt la Q2 : oui, ça rebondit).
+
 ---
 *Exécution : `cd synchrotron-24 && python3 experiences/s01_naissance.py`* 🔒

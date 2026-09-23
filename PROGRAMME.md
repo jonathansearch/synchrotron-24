@@ -55,6 +55,9 @@ n'y arrive pas à cause de la décohérence → les étoiles massives s'effondre
 2. **Rebond** : tension élastique du ballon (loi 7 : contre-pression ∝
    courbure locale) → r_min > 0 toujours ? Tranche : oui = ressort 0.083
    (rebond §2) ; non = perçage → piste trou blanc. Test : S03.
+   **MESURÉ S03 ✅ (cible 2)** : GR traverse (r 4→0.54→3.9, H1→0.000,
+   amnésie) ; Planck stoppe à r=0.77 (rho~12.5≈rho_crit/2, H1~0.1-0.18).
+   r_min > 0 côté Planck = ressort, pas de singularité = rebond (v1).
 3. **Λ / poids** : tore fermé sans trou noir, Φ global libre → quelle
    répulsion effective stabilise Φ ? Tranche : signe et ordre de grandeur
    de notre Λ. Test : S04.

@@ -36,3 +36,10 @@
   Verdict : masse meurt, info migre — Hawking confondait topologie/énergie.
   Loi 8 + ticket DISSOCIATION_MASSE_INFO. Fig plot_S02b. (« S04 » du ticket
   remappé S02b, S04 reste Λ au PROGRAMME.)
+
+## 2026-09-23 — S03 MESURÉ : KO de la singularité, cible 2 🥊✅
+- Mission 2 GO : GR traverse et pulvérise (H1 5.75→0.000, amnésie),
+  Planck stoppe à r=0.77 (rho~12.5≈rho_crit/2, H1~0.1-0.18 mini-survit).
+  v1 sans friction annulée (orbites, centrifuge). Verdict : pas de point
+  zéro côté Planck = rebond (v1), NON-DÉBUT en piste. Loi 9 + ticket
+  REBOND_PLANCK (clôt Q2). Fig plot_S03.

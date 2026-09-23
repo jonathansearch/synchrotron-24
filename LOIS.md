@@ -23,6 +23,12 @@ r_s = 2M = **295 km** en réel = **1.0** en sim. Tout est en ratios r/r_s
    conserve l'info (topologie, I→0.73) mais dissipe la masse (énergie,
    M→0.02 sans re-compaction : PHI 5.1→0.001). Le paradoxe de Hawking
    vient de la confusion entre ces deux régimes.
+9. **Rebond de Planck (S03, mesuré)** : micro-loi -g/r²+k/r⁴ (k=0 GR,
+   k=G·r_eq² Planck, r_eq=0.6, rho_crit~26.5) + friction γ=0.5. GR :
+   traverse (r 4→0.54→3.9), H1 5.75→0.000 (structure pulvérisée).
+   Planck : chute stoppée à r=0.77, rho plafonnée ~12.5, H1~0.1-0.18
+   (mémoire miniature survivante). Un coeur répulsif à l'échelle r_eq
+   interdit la singularité : densité finie + mémoire = rebond (v1).
 
 ## Hérités (non modifiés)
 - Couplage Q Kuramoto K=1 (TEST-79), P_sig/ripser (conteneur),

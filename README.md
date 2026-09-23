@@ -9,7 +9,7 @@ On observe tout : déformation, P_sig, intrication, fluctuations,
 cohérence, gravité, relativité.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-teal.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/Tests-S01%E2%80%93S02b-teal.svg)](PROTOCOLES.md)
+[![Tests](https://img.shields.io/badge/Tests-S01%E2%80%93S03-teal.svg)](PROTOCOLES.md)
 [![Masse](https://img.shields.io/badge/M-100%20M%E2%98%89-teal.svg)](LOIS.md)
 [![Neurones](https://img.shields.io/badge/neurones-z%C3%A9ro-orange.svg)](organes/)
 
@@ -65,6 +65,13 @@ Qubits massifs : M_local pic 0.65 → 0.02, I_rec → 0.73, PHI_max → 0.001
 (pas de re-compaction). Hawking confondait les deux régimes.
 
 <img src="images/plot_S02b.png" width="100%" alt="S02b : dissociation"/>
+
+## 🥊 S03 : KO de la singularité — l'univers rebondit (cible 2)
+
+GR traverse et pulvérise l'anneau (H1 5.75 → 0.000, amnésie) ; Planck stoppe
+la chute à r=0.77 (densité plafonnée ~12.5, mini-tatouage H1~0.1). Pas de point zéro !
+
+<img src="images/plot_S03.png" width="100%" alt="S03 : rebond de Planck"/>
 
 - **Déformation** : pic ×24000 au passage (spaghettification).
 - **P_sig** : 1.95 → 0.2 → 0.9 gelé (la topologie s'effondre, un reste gèle).
