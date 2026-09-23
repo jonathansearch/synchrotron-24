@@ -115,3 +115,8 @@
 
 ## 2026-09-23 — MICROSCOPE (mort ansatz 0..12L, exact vs bruit K) 🔬
 - zz pic 4L (.46/.40), vivant à 12L (.13/.16), horizon ~14L. MI meurt avant zz (.07 vs .13 à 12L). H exacte creuse 7L (revival), H bruit monte (5.25). Loi : trio (zz,MI,H) obligatoire, Page/H seule ment. Jalon : MICROSCOPE.md + fig. Coût : $0.
+
+## 2026-09-23 (soir) — CLÔTURE campagne QPU + repos pro forma 🏁
+- Bilan : ~400 pubs IBM (batchs 1-4 + moissons 1-2), quota mort. Sim-bruit : radar (horizon ≥8L) + microscope (horizon ~14L, loi du trio). Routes futures : qBraid (validé, solde 0) + AWS Braket (attente CB).
+- Pro forma : README racine (+section QPU + MIT), README qpu-bigbang + moissonneur, SYNTHESE_MOISSONS.md, moissonneur/AWS.md, doublon /home/user/qpu-bigbang supprimé, scientist-research passé MIT, MEMO commité, GCR .gitignore. Secrets : grep propre sur les 5 repos.
+- Le simulateur est validé (simu=hardware partout) : on n'a plus rien à prouver, on exploite.

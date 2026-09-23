@@ -231,3 +231,21 @@ synchrotron-24/
 ├── resultats/                     # un JSON par test (les faits bruts)
 ├── images/                        # logo + 9 figures (les preuve
 ...[truncated 515 chars]
+---
+
+## ⚛️ Campagne QPU 2026 (mesures réelles + sims bruitées)
+
+| Jalon | Fait | Verdict |
+|---|---|---|
+| Batchs 1-3 (IBM) | 65 pubs | GHZ/KZ/Grover/Page : simu = hardware |
+| Batch 4 collision (kingston) | 29 pubs | contact 5σ, Page +0.2, écho H 0.014 |
+| Moisson 1 (kingston, 51 pubs) | brutal>mid 3/3 (3.3σ), Page revival | dérive session 0.04 → autocal |
+| Moisson 2 (2 backends, 240 pubs) | zz→plateau (K 88%, M 60%), Page cloche pic λ0.8 | facteur backend 1.4 → calibrage/backend |
+| RADAR sim-bruit | horizon ≥ 8L, revival 4L→6L | modèle bruit = 87% du réel (kingston) |
+| MICROSCOPE 0-12L | MI meurt avant zz, horizon ~14L | loi du trio (zz, MI, H) — Page seule ment |
+| Routes QPU | IBM quota mort → qBraid validé (simu=exacte) → AWS Braket (en attente CB) | devis radar-lite ~$5 |
+
+**Produit** : DOSIMÉTRIE DE L'INTRICATION (problème nouveau : personne ne dose λ/profondeur). Index : [qpu-bigbang/README.md](qpu-bigbang/README.md) · synthèse : [qpu-bigbang/SYNTHESE_MOISSONS.md](qpu-bigbang/SYNTHESE_MOISSONS.md) · problème : [qpu-bigbang/moissonneur/PROBLEME.md](qpu-bigbang/moissonneur/PROBLEME.md).
+
+## 📜 Licence
+MIT — voir [LICENSE](LICENSE). Copyright (c) 2026 Jonathan.
