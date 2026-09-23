@@ -49,6 +49,9 @@ n'y arrive pas à cause de la décohérence → les étoiles massives s'effondre
 1. **Courbe de Page** : évaporation lente (M(t) décroît, loi Hawking-like
    déclarée) → F_info remonte-t-elle ? Tranche : oui = unitarité mesurée
    (conversion Berry, §3.2) ; non = rupture U. Test : S02.
+   **SUITE S02b ✅ (cible 1 FINIE)** : dissociation masse/info — M_local
+   pic 0.65 → 0.02, I_rec 0.73, PHI_max → 0.001 (pas de re-compaction).
+   Hawking confondait topologie (conserve) et énergie (dissipe).
 2. **Rebond** : tension élastique du ballon (loi 7 : contre-pression ∝
    courbure locale) → r_min > 0 toujours ? Tranche : oui = ressort 0.083
    (rebond §2) ; non = perçage → piste trou blanc. Test : S03.

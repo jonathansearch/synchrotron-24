@@ -29,3 +29,10 @@
   Écart 0.06 = flips de fuite. R_global suivi, r_moy fuit.
   Tranchement : unitarité mesurée, pas de rupture U. Fig plot_S02.
   Questions reformulées sur faits postées ici avant exécution (ordre chef).
+
+## 2026-09-23 — S02b MESURÉ : DISSOCIATION, cible 1 FINIE ✅
+- M_local pic 0.65 → 0.02 (les gelés pèsent puis repartent) ; I_rec 0.73 ;
+  PHI_max 5.1→24→0.001 (fuite diffuse, pas de re-compaction).
+  Verdict : masse meurt, info migre — Hawking confondait topologie/énergie.
+  Loi 8 + ticket DISSOCIATION_MASSE_INFO. Fig plot_S02b. (« S04 » du ticket
+  remappé S02b, S04 reste Λ au PROGRAMME.)

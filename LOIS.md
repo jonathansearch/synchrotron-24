@@ -18,6 +18,11 @@ r_s = 2M = **295 km** en réel = **1.0** en sim. Tout est en ratios r/r_s
 7. **Évaporation + émission (S02, déclarées)** : M 0.5→0.02 linéaire
    (pas Hawking exact) ; qubit gelé-dehors réémis kick 1.5·v_esc.
    Le MESURÉ = F_info et R après retour, pas le mécanisme.
+8. **Dissociation masse/info (S02b, mesurée)** : qubits massifs m=0.01 ;
+   M_local = M_BH + m×n_gelés ; PHI_max = max(1/d3³) dehors. L'horizon
+   conserve l'info (topologie, I→0.73) mais dissipe la masse (énergie,
+   M→0.02 sans re-compaction : PHI 5.1→0.001). Le paradoxe de Hawking
+   vient de la confusion entre ces deux régimes.
 
 ## Hérités (non modifiés)
 - Couplage Q Kuramoto K=1 (TEST-79), P_sig/ripser (conteneur),

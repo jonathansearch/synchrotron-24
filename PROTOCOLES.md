@@ -21,5 +21,17 @@
   REVIENT à ~F_gelée → unitarité mesurée (dans ce modèle), pas de
   rupture U détectée. Contrôle S01 (M const) : reste à 0.
 
+## S02b — Dissociation masse/info : la masse meurt (CIBLE 1 FINIE, 2026-09-23)
+- **Méthode** : S02 + qubits massifs m=0.01 (alourdissent le puits en
+  tombant, repartent avec leur masse). M_local = M_BH + 0.01×n_gelés
+  (terme qubits dynamique, pas relu) + PHI_max dehors (1/d3³, sonde de
+  re-compaction). (Remappe le « S04 » du ticket : S04 reste Λ.)
+- **Observé** : M_local 0.5 → pic 0.65 (t=40, les gelés PÈSENT, preuve
+  de non-circularité) → 0.02. I_rec → 0.73 (S02 ✓). PHI_max 5.1 → 24
+  (chute) → 0.001 (fuite diffuse, 5000× sous l'initial).
+  TRANCHEMENT : masse → 0 SANS re-compaction pendant que info → 0.73.
+  Hawking confondait les deux régimes : topologie (conserve) vs énergie
+  (dissipe). Ticket : tickets/DISSOCIATION_MASSE_INFO.md.
+
 ---
 *Exécution : `cd synchrotron-24 && python3 experiences/s01_naissance.py`* 🔒
