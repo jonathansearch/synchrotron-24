@@ -47,7 +47,7 @@ qui s'applique à l'univers lui même donc il a bien une taille. »
 PRINCIPE POSÉ PAR DÉDUCTION (ontologique, depuis la loi Φ), **non encore
 testé**. Il ne rentre dans aucun canon tant qu'un test ne l'a pas touché.
 
-## Piste de test (S02, NON ordonnée, NON exécutée)
+## Piste de test (S06, NON ordonnée, NON exécutée)
 Même nuage, deux topologies : **ouverte** (bords absorbants, fuite permise)
 vs **fermée** (tore compact, rien ne fuit). Question : Φ atteint-il Φ_c
 seulement en fermé ? Si oui : l'enfermement est mesuré, pas seulement déduit.

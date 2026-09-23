@@ -59,6 +59,8 @@ n'y arrive pas à cause de la décohérence → les étoiles massives s'effondre
    la chute des suivants change-t-elle ? Tranche : oui = gravité sans
    matière (mémoire topologique) ; non = la topologie seule ne pèse pas.
    Test : S05.
+5. **Enfermement** (principe) : ouvert (bords absorbants) vs fermé (tore)
+   → Φ atteint-il Φ_c seulement en fermé ? Test : S06.
 
 ## §5. La méthode (arme, pas humeur)
 Vision 3D → univers virtuel → verrou QPU → archive. Topologie d'abord
