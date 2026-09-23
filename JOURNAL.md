@@ -100,3 +100,7 @@
 ## 2026-09-23 — Moisson 1 : la collision devient INSTRUMENT 🌾
 - 3 rondes x 17 pubs (51, 1 job marrakesh) : zz brutal>mid 3/3 (0.126±0.015 vs 0.072±0.006, =simu, batch4-inversion = bruit) ; Page mid>brutal (0.761±0.005 vs 0.613±0.018, revival =simu) ; témoins à zéro ; dérive session 0.04 >> sigma 0.01 -> autocalibration/session.
 - Livrables : moissonneur/ (harvest1, moisson1.json, DATASHEET, COLLECTEUR v0, fig). Point de fonctionnement : Page@lam0.6 (metro), zz@lam1.2 (detection). Chaîne batch4 non réutilisée (verif None, layout auto -> robustesse prouvée).
+
+## 2026-09-23 — Moisson 2 : datasheet v1, 2 backends, cloche confirmée 🌾🌾
+- Lam fin 0.4-1.6 x 5 rondes x marrakesh+kingston (240 pubs, 2 jobs) : zz monotone->plateau (M 0.16, K 0.22 = 88% théorie !) ; Page CLOCHE pic lam~0.8 (0.78, 2 backends identiques, =simu+plancher) ; témoins ~0 ; dérive inter-backend x1.4 (zz) -> calibrage/backend.
+- Points figés : Page@0.8 (métro, sig .005), zz@>=1.2 (détection). Leçons : autocal/session, trigger médiane (ronde l8 bruitée), chaînes forcées+log. DATASHEET v1 + fig_moisson2.
