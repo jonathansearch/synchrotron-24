@@ -9,7 +9,7 @@ On observe tout : déformation, P_sig, intrication, fluctuations,
 cohérence, gravité, relativité.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-teal.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/Tests-S01%E2%80%93S03b-teal.svg)](PROTOCOLES.md)
+[![Tests](https://img.shields.io/badge/Tests-S01%E2%80%93S04-teal.svg)](PROTOCOLES.md)
 [![Masse](https://img.shields.io/badge/M-100%20M%E2%98%89-teal.svg)](LOIS.md)
 [![Neurones](https://img.shields.io/badge/neurones-z%C3%A9ro-orange.svg)](organes/)
 
@@ -79,6 +79,14 @@ Point zéro lâché : Planck EXPLOSE (r 0.1 → 343, H1 0 → 61, H·t = 1.00,
 rond 12/12, 24/24 bits) ; GR fusionne (d_min 0.0015, H1 = 0.00, jets).
 
 <img src="images/plot_S03b.png" width="100%" alt="S03b : résurrection"/>
+
+## 👻 S04 : le fantôme Lambda capturé (cible 3 finie)
+
+Séparatrice LIÉ/LIBRE entre 0 et 0.002 → Λ* ~ 10⁻³, SIGNE + (comme le vrai
+univers !), crayon 0.1125 réfuté ×50. Zéro crunch, fragmentation = POIDS,
+les RIPs rapides figent l'anneau (H1 → 36).
+
+<img src="images/plot_S04.png" width="100%" alt="S04 : lambda fantôme"/>
 
 - **Déformation** : pic ×24000 au passage (spaghettification).
 - **P_sig** : 1.95 → 0.2 → 0.9 gelé (la topologie s'effondre, un reste gèle).

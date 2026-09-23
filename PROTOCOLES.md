@@ -66,5 +66,24 @@
   Rien ne se perd (24/24 bits des deux côtés) mais GR colle, Planck envole.
   Ticket : tickets/RESURRECTION_BIGBANG.md (TOUS les détails).
 
+## S04 — LAMBDA : le fantôme capturé, séparatrice ~10^-3 ➕ (MISSION 3, 2026-09-23)
+- **Méthode** : anneau N=24 libre (R0=4, pas de trou noir), attraction
+  -g/r² (k=0 : grandes échelles), F_Lambda=+Lambda.r (forme exacte du vrai
+  Lambda !), γ=0.3. Scan Lambda -0.05→+0.2, destins LIÉ/RIP/CRUNCH.
+- **V1 réfutée** : crayon prédisait Lambda*=0.1125 + CRUNCH en dessous.
+  OBSERVÉ : zéro CRUNCH (l'effondrement asymétrique rate toujours le
+  centre), fragmentation UNIVERSELLE (H1 meurt, d_min->0.0001 : la vision
+  POIDS se produit spontanément !), premier RIP dès 0.06.
+- **V2/V3 (t=120 + extension 0.002 à t=240)** : VRAIE séparatrice LIÉ/LIBRE
+  entre 0.0 (lié, repli 7.6) et 0.002 (RIP lent t~240) → **Lambda* ~ 10^-3,
+  SIGNE + (répulsion, comme le vrai univers !)**, crayon réfuté x50 (la
+  fragmentation + les catapultes offrent l'évasion gratuite). Ralentissement
+  critique : t_RIP 8→240 près de Lambda*. Zone chaotique (l'arrondi seul
+  change les détails près du fil).
+- **Course mémoire** : RIPs rapides (≥0.09) figent l'anneau INTACT (H1 5.7→
+  20-36, gonfle !), RIPs lents le grumèlent (H1→0), liés idem. La fuite
+  rapide sauve la mémoire. Transition chaotique 0.045-0.06.
+  Ticket : tickets/LAMBDA_FANTOME.md.
+
 ---
 *Exécution : `cd synchrotron-24 && python3 experiences/s01_naissance.py`* 🔒

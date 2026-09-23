@@ -50,3 +50,11 @@
   24/24 bits, 0 fusion. GR : noyau fusionné (d_min 0.0015 !), H1=0.00, jets
   2-4/12, F touillé. Verdict : Planck EXPLOSE, GR colle. Loi 10 + ticket
   RESURRECTION_BIGBANG (détails complets). Fig plot_S03b. Mission 2 finie !
+
+## 2026-09-23 — S04 MESURÉ : le fantôme Lambda capturé ! 👻✅
+- Mission 3 : scan Lambda -0.05→+0.2. V1 : crayon 0.1125 RÉFUTÉ (zéro
+  CRUNCH, fragmentation universelle = POIDS ✓, RIP dès 0.06). V2/V3 :
+  séparatrice entre 0.0 (lié) et 0.002 (RIP t~240) → Lambda* ~10^-3,
+  SIGNE + comme le vrai univers ! Ralentissement critique (t 8→240),
+  chaos d'arrondi au fil. Course mémoire : RIPs rapides figent l'anneau
+  (H1→36), lents le tuent. Loi 11 + ticket LAMBDA_FANTOME. Fig plot_S04.

@@ -36,6 +36,13 @@ r_s = 2M = **295 km** en réel = **1.0** en sim. Tout est en ratios r/r_s
     GR : noyau fusionné (d_min 0.0015), H1=0.00, jets 2-4/12, F 0.33-0.58.
     Le point zéro avec coeur répulsif EXPLOSE en univers rond de Hubble ;
     sans coeur il fusionne et crache. Rien ne se perd (24/24 bits partout).
+11. **Lambda fantôme (S04, mesuré)** : anneau libre R0=4, attraction -g/r²,
+    F_Lambda=+Lambda.r, γ=0.3. Zéro CRUNCH (rate le centre) ; fragmentation
+    universelle (H1->0, d_min->0.0001 = POIDS spontané). Séparatrice
+    LIÉ/LIBRE entre 0.0 et 0.002 → Lambda* ~10^-3, SIGNE + (répulsion
+    comme le vrai univers), crayon 0.1125 réfuté x50. Ralentissement
+    critique t_RIP 8→240 + chaos d'arrondi. RIPs rapides (≥0.09) figent
+    l'anneau (H1→20-36), lents le tuent : la fuite sauve la mémoire.
 
 ## Hérités (non modifiés)
 - Couplage Q Kuramoto K=1 (TEST-79), P_sig/ripser (conteneur),

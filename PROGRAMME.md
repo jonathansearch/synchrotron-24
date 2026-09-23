@@ -65,6 +65,10 @@ n'y arrive pas à cause de la décohérence → les étoiles massives s'effondre
 3. **Λ / poids** : tore fermé sans trou noir, Φ global libre → quelle
    répulsion effective stabilise Φ ? Tranche : signe et ordre de grandeur
    de notre Λ. Test : S04.
+   **MESURÉ S04 ✅ (cible 3 FINIE)** : zéro CRUNCH, fragmentation partout
+   (POIDS ✓) ; séparatrice LIÉ/LIBRE entre 0.0 et 0.002 → Λ* ~10^-3,
+   SIGNE + (comme le vrai univers !), crayon 0.1125 réfuté x50 ;
+   ralentissement critique + chaos ; RIPs rapides figent H1 (→36).
 4. **Trous gravitent** : masses absorbées retirées, empreinte H1 gardée →
    la chute des suivants change-t-elle ? Tranche : oui = gravité sans
    matière (mémoire topologique) ; non = la topologie seule ne pèse pas.
