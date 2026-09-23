@@ -86,3 +86,8 @@
   fermé H1≠0, saturé Φ≥Φ_c). Ticket GRAVITE clos (double verdict).
   Ticket APPLICATION_PROGRAMME_5_CLES ouvert (publication ? application ?
   frontière ?). AUCUN S07 ordonné : silence sacré. ⚛️
+
+## 2026-09-23 — QPU : Big Bang + TOUT le programme sur hardware réel ! ⚛️✅
+- 3 batchs IBM (kingston/marrakesh 156q) : batch1 Big Bang (KZ 1.96/0.50, GHZ5 0.93, BV 101) ; batch2 TOUT S01-S06+warp en 1 job (Page S=0.89/0.99, Grover 0.42/0.70/0.42, mur Alcubierre corr 0.994) ; batch3 revanche 100% (T1=230us=fité=props, reset 99%, Bell 0.997, Planck 0.967/ZNE 0.977, écho +23%).
+- Failles trouvées + fixées : dt=4ns (délais batch2 18x trop longs, mea culpa), loterie layout (q121 21%/q146 49% -> fixes q60/(10,11)/(138,151,152)), calibration readout + REM.
+- Dossier : qpu-bigbang/ (circuits, simus, résultats, jobs, figs). Clés JAMAIS commitées (audit pre-push).
