@@ -96,3 +96,7 @@
 - 2 murs tanh (6q) + contact RZZ(lam), marrakesh, 29 pubs : zz 0.03/0.05/0.11/0.08 (témoin libre -0.001, 5-sigma), Page q3 = simu (0.80/0.66 vs 0.75/0.60), écho H 0.014 vs 0.029 (revient 2x mieux). Couplage optimal lam~1.2 (simu), revival au-delà (non-monotonie = vraie physique).
 - REFUTATION HONNETE : beta1-Hamming saturé (~100 partout) -> détecteur aveugle, voir qpu-collision/DETECTEURS_INVALIDES.md. Ticket COLLISION_TANH_QPU CLOS ; NOUVEAUX_DETECTEURS_TOPO OUVERT (Rips/superlevel).
 - Archive : qpu-bigbang/qpu-collision/ + SYNTHESE_4_BATCHS.md. Campagne close, EXPLOITATION ouverte (moissonneur/).
+
+## 2026-09-23 — Moisson 1 : la collision devient INSTRUMENT 🌾
+- 3 rondes x 17 pubs (51, 1 job marrakesh) : zz brutal>mid 3/3 (0.126±0.015 vs 0.072±0.006, =simu, batch4-inversion = bruit) ; Page mid>brutal (0.761±0.005 vs 0.613±0.018, revival =simu) ; témoins à zéro ; dérive session 0.04 >> sigma 0.01 -> autocalibration/session.
+- Livrables : moissonneur/ (harvest1, moisson1.json, DATASHEET, COLLECTEUR v0, fig). Point de fonctionnement : Page@lam0.6 (metro), zz@lam1.2 (detection). Chaîne batch4 non réutilisée (verif None, layout auto -> robustesse prouvée).
