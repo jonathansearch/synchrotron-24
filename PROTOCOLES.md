@@ -11,5 +11,15 @@
   Fluctuations → 0 (gel). a_grav → 0.49 (soft-core). Queues plates =
   gel absorbé (choix, pas découverte).
 
+## S02 — Courbe de Page : l'info revient (CIBLE 1, 2026-09-23)
+- **Méthode** : S01 + évaporation déclarée (M 0.5→0.02 linéaire t=30..200,
+  pas Hawking exact) + réémission kick 1.5·v_esc (déclarée ; mesuré = F, R).
+  Observable : bits intacts DEHORS /64. T=10000, DT=0.02.
+- **Observé** : bits_out 1.0 → 0.05 (t=20, absorption) → 0.73 (t≥80,
+  plateau ±0.02 par flips aller-retour). 24/24 réémis. F_frozen S01 =
+  0.79 : l'écart 0.06 = flips pendant la fuite. TRANCHEMENT : l'info
+  REVIENT à ~F_gelée → unitarité mesurée (dans ce modèle), pas de
+  rupture U détectée. Contrôle S01 (M const) : reste à 0.
+
 ---
 *Exécution : `cd synchrotron-24 && python3 experiences/s01_naissance.py`* 🔒

@@ -15,6 +15,9 @@ r_s = 2M = **295 km** en réel = **1.0** en sim. Tout est en ratios r/r_s
    gradient Hawking-like, paramètre libre déclaré).
 6. **Gel absorbé** : qubits croisés gelés (position/phase/info) — CHOIX
    de modèle (pas de spéculation trans-horizon), queues plates = gel.
+7. **Évaporation + émission (S02, déclarées)** : M 0.5→0.02 linéaire
+   (pas Hawking exact) ; qubit gelé-dehors réémis kick 1.5·v_esc.
+   Le MESURÉ = F_info et R après retour, pas le mécanisme.
 
 ## Hérités (non modifiés)
 - Couplage Q Kuramoto K=1 (TEST-79), P_sig/ripser (conteneur),

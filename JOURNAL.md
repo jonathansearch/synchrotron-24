@@ -23,3 +23,9 @@
   trous-gravitent (S05) — avec tranchements oui/non. AUCUN ordonné.
 - Fichier : PROGRAMME.md. Détails du chef intégrés verbatim (poids,
   digestion, perçage). En attente : ordre cible par cible.
+
+## 2026-09-23 — S02 MESURÉ : courbe de Page, l'info REVIENT (cible 1 ✅)
+- bits_out 1→0.05→0.73 (plateau) ; 24/24 réémis ; F_gelée 0.79.
+  Écart 0.06 = flips de fuite. R_global suivi, r_moy fuit.
+  Tranchement : unitarité mesurée, pas de rupture U. Fig plot_S02.
+  Questions reformulées sur faits postées ici avant exécution (ordre chef).
