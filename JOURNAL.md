@@ -120,3 +120,6 @@
 - Bilan : ~400 pubs IBM (batchs 1-4 + moissons 1-2), quota mort. Sim-bruit : radar (horizon ≥8L) + microscope (horizon ~14L, loi du trio). Routes futures : qBraid (validé, solde 0) + AWS Braket (attente CB).
 - Pro forma : README racine (+section QPU + MIT), README qpu-bigbang + moissonneur, SYNTHESE_MOISSONS.md, moissonneur/AWS.md, doublon /home/user/qpu-bigbang supprimé, scientist-research passé MIT, MEMO commité, GCR .gitignore. Secrets : grep propre sur les 5 repos.
 - Le simulateur est validé (simu=hardware partout) : on n'a plus rien à prouver, on exploite.
+
+## 2026-09-24 — OpenQuantum branché : Bell réel sur Rigetti Cepheus (CX syst. KO) ⚛️
+- SDK natif OK, 4 jobs (128 shots, ~1 Spark/job, solde 21). 1q parfait (X/H), Bell 2/2 identique anormal (00+10, 11~0) → CX inopérant systématique (mapping ? precompile ?). Pas de calibration dispo. Note : moissonneur/OPENQUANTUM.md.
