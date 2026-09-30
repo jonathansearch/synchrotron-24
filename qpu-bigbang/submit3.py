@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
 """Tire batch3 (30 pubs revanche) en 1 job. Layout fixe, REM, fits. Cle env."""
+import os as _os, pathlib as _pl  # RATISS: chemins portables (dépôts clonés côte à côte, ou RATISS_HOME)
+_RATISS_HOME = _os.environ.get('RATISS_HOME') or str(_pl.Path(__file__).resolve().parents[2])
 import json, os, sys
 import numpy as np
-sys.path.insert(0, '/home/user/qpu-bigbang')
+sys.path.insert(0, (_RATISS_HOME + '/synchrotron-24/qpu-bigbang'))
 from batch3 import build_batch3, analyse3, unfold1, unfold2, SHOTS
 from qiskit_ibm_runtime import QiskitRuntimeService, Sampler
 from qiskit.transpiler.preset_passmanagers import generate_preset_pass_manager
@@ -63,7 +65,7 @@ for w, lst in groups.items():
         tc.append((nom, t, fin))
         print(f'  {nom}: depth={t.depth()} 2q={n2q} map={fin}', flush=True)
 job = Sampler(mode=be).run([c for _, c, _ in tc], shots=SHOTS)
-open('/home/user/qpu-bigbang/job3_id.txt', 'w').write(f'{job.job_id()} {be.name}')
+open((_RATISS_HOME + '/synchrotron-24/qpu-bigbang/job3_id.txt'), 'w').write(f'{job.job_id()} {be.name}')
 print('JOB:', job.job_id(), flush=True)
 try:
     res = job.result(timeout=1550)
@@ -106,7 +108,7 @@ f1 = out['pubs']['S03-planck-x1']['P_retour']
 f3 = out['pubs']['S03-planck-x3']['P_retour']
 out['zne'] = {'F_x1': f1, 'F_x3': f3,
               'F_zero': round(float(np.clip((3*f1-f3)/2, 0, 1)), 3)}
-json.dump(out, open('/home/user/qpu-bigbang/qpu_batch3.json', 'w'), indent=0)
+json.dump(out, open((_RATISS_HOME + '/synchrotron-24/qpu-bigbang/qpu_batch3.json'), 'w'), indent=0)
 print(f"--- QPU {be.name} (RAW -> MIT) ---")
 for nom, e in out['pubs'].items():
     if nom.startswith('CAL'): continue

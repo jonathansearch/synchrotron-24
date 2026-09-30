@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
 """Tire moisson 1 (51 pubs, 1 job). Reutilise chaine batch4 si saine."""
+import os as _os, pathlib as _pl  # RATISS: chemins portables (dépôts clonés côte à côte, ou RATISS_HOME)
+_RATISS_HOME = _os.environ.get('RATISS_HOME') or str(_pl.Path(__file__).resolve().parents[3])
 import json, os, sys
 import numpy as np
-sys.path.insert(0, '/home/user/synchrotron-24/qpu-bigbang')
-sys.path.insert(0, '/home/user/synchrotron-24/qpu-bigbang/moissonneur')
+sys.path.insert(0, (_RATISS_HOME + '/synchrotron-24/qpu-bigbang'))
+sys.path.insert(0, (_RATISS_HOME + '/synchrotron-24/qpu-bigbang/moissonneur'))
 from harvest1 import build_harvest, BASE
 from batch4 import analyse4, page_S_mit, hellinger, SHOTS
 from qiskit_ibm_runtime import QiskitRuntimeService, Sampler
@@ -23,7 +25,7 @@ P, cmap = be.properties(), be.coupling_map
 def ok1(i):
     try: return bool(np.isfinite(P.readout_error(i)) and np.isfinite(P.t1(i)))
     except Exception: return False
-old = json.load(open('/home/user/synchrotron-24/qpu-bigbang/qpu_batch4.json'))['chaine6']
+old = json.load(open((_RATISS_HOME + '/synchrotron-24/qpu-bigbang/qpu_batch4.json')))['chaine6']
 E = set(cmap.get_edges()) | {(b, a) for a, b in cmap.get_edges()}
 chain = old if all(ok1(q) for q in old) and all((old[i], old[i+1]) in E for i in range(5)) else None
 print('chaine batch4 reutilisee:', chain, flush=True)
@@ -31,7 +33,7 @@ pm = generate_preset_pass_manager(backend=be, optimization_level=1, initial_layo
 pubs = build_harvest(3)
 tc = [(nom, pm.run(qc)) for nom, qc in pubs]
 job = Sampler(mode=be).run([c for _, c in tc], shots=SHOTS)
-open('/home/user/synchrotron-24/qpu-bigbang/moissonneur/job_h1_id.txt', 'w').write(f'{job.job_id()} {be.name}')
+open((_RATISS_HOME + '/synchrotron-24/qpu-bigbang/moissonneur/job_h1_id.txt'), 'w').write(f'{job.job_id()} {be.name}')
 print('JOB:', job.job_id(), flush=True)
 try:
     res = job.result(timeout=1550)
@@ -48,8 +50,8 @@ for r in range(3):
         c0, c1 = R[f'R{r}-CALq3-0']['counts'], R[f'R{r}-CALq3-1']['counts']
         R[f'R{r}-PAGE-q3-{tm}'] = {'S_mit': round(page_S_mit(g('Z'), g('X'), g('Y'), c0, c1), 3)}
 json.dump({'backend': be.name, 'job': job.job_id(), 'chaine': chain, 'R': R},
-          open('/home/user/synchrotron-24/qpu-bigbang/moissonneur/moisson1.json', 'w'), indent=0)
-b4 = json.load(open('/home/user/synchrotron-24/qpu-bigbang/qpu_batch4.json'))['pubs']
+          open((_RATISS_HOME + '/synchrotron-24/qpu-bigbang/moissonneur/moisson1.json'), 'w'), indent=0)
+b4 = json.load(open((_RATISS_HOME + '/synchrotron-24/qpu-bigbang/qpu_batch4.json')))['pubs']
 print('--- MOISSON (rondes R0-R2 + batch4) ---')
 for nom in ('T0-init', 'T2-doux', 'T2-mid', 'T2-brutal', 'CTRL-libre', 'ECHO-mid'):
     zz = [R[f'R{r}-{nom}']['zz_contact'] for r in range(3)]

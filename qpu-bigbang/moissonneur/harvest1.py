@@ -2,8 +2,10 @@
 # SPDX-License-Identifier: MIT
 """MOISSONNEUR v1 : 3 rondes x 17 pubs (cellule contact, Page-q3, REM).
 Exploitation (pas d'exploration) : stats mean/sigma + derive. n=4 avec batch4."""
+import os as _os, pathlib as _pl  # RATISS: chemins portables (dépôts clonés côte à côte, ou RATISS_HOME)
+_RATISS_HOME = _os.environ.get('RATISS_HOME') or str(_pl.Path(__file__).resolve().parents[3])
 import json, sys
-sys.path.insert(0, '/home/user/synchrotron-24/qpu-bigbang')
+sys.path.insert(0, (_RATISS_HOME + '/synchrotron-24/qpu-bigbang'))
 from batch4 import build_batch4, analyse4, SHOTS
 BASE = ['T0-init', 'T2-doux', 'T2-mid', 'T2-brutal', 'CTRL-libre', 'ECHO-mid'] + \
        [f'PAGE-q3-{tm}-{b}' for tm in ('t0', 'mid', 'brutal') for b in 'XYZ'] + \

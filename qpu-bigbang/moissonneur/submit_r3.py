@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
 """Tire radar 3 (69 pubs, 1 job, kingston)."""
+import os as _os, pathlib as _pl  # RATISS: chemins portables (dépôts clonés côte à côte, ou RATISS_HOME)
+_RATISS_HOME = _os.environ.get('RATISS_HOME') or str(_pl.Path(__file__).resolve().parents[3])
 import json, os, sys
 import numpy as np
-sys.path.insert(0, '/home/user/synchrotron-24/qpu-bigbang')
-sys.path.insert(0, '/home/user/synchrotron-24/qpu-bigbang/moissonneur')
+sys.path.insert(0, (_RATISS_HOME + '/synchrotron-24/qpu-bigbang'))
+sys.path.insert(0, (_RATISS_HOME + '/synchrotron-24/qpu-bigbang/moissonneur'))
 from radar3 import build_radar, NLS
 from batch4 import analyse4, page_S_mit, SHOTS
 from qiskit_ibm_runtime import QiskitRuntimeService, Sampler
@@ -41,7 +43,7 @@ for nom, t in tc[:9]:
     n2q = sum(1 for i in t.data if len(i.qubits) == 2 and i.operation.name != 'barrier')
     print(f'  {nom}: depth={t.depth()} 2q={n2q}', flush=True)
 job = Sampler(mode=be).run([c for _, c in tc], shots=SHOTS)
-open('/home/user/synchrotron-24/qpu-bigbang/moissonneur/job_r3_kingston.txt', 'w').write(f'{job.job_id()} {be.name}')
+open((_RATISS_HOME + '/synchrotron-24/qpu-bigbang/moissonneur/job_r3_kingston.txt'), 'w').write(f'{job.job_id()} {be.name}')
 print('JOB:', job.job_id(), flush=True)
 try:
     res = job.result(timeout=1550)
@@ -58,7 +60,7 @@ for r in range(3):
         c0, c1 = R[f'R{r}-CALq3-0']['counts'], R[f'R{r}-CALq3-1']['counts']
         R[f'R{r}-PAGE-q3-{tm}'] = {'S_mit': round(page_S_mit(g('Z'), g('X'), g('Y'), c0, c1), 3)}
 json.dump({'backend': be.name, 'job': job.job_id(), 'chaine': chain, 'R': R},
-          open('/home/user/synchrotron-24/qpu-bigbang/moissonneur/moisson3_kingston.json', 'w'), indent=0)
+          open((_RATISS_HOME + '/synchrotron-24/qpu-bigbang/moissonneur/moisson3_kingston.json'), 'w'), indent=0)
 print('--- RADAR kingston (simu: zz .18/.38/.46/.29/.31 @2/3/4/6/8) ---')
 for nom in ['T0-init', 'LIBRE-4L', 'ECHO-4L'] + [f'D{n}L' for n in NLS]:
     zz = [R[f'R{r}-{nom}']['zz_contact'] for r in range(3)]

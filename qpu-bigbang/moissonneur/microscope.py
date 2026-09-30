@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
 """MICROSCOPE : mort d'un ansatz couche par couche (exact vs bruit kingston)."""
+import os as _os, pathlib as _pl  # RATISS: chemins portables (dépôts clonés côte à côte, ou RATISS_HOME)
+_RATISS_HOME = _os.environ.get('RATISS_HOME') or str(_pl.Path(__file__).resolve().parents[3])
 import json, os, sys
 import numpy as np
-sys.path.insert(0, '/home/user/synchrotron-24/qpu-bigbang')
+sys.path.insert(0, (_RATISS_HOME + '/synchrotron-24/qpu-bigbang'))
 from batch4 import init_murs, couche, analyse4, SHOTS
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import Statevector
@@ -33,7 +35,7 @@ for nl in DEPTHS:
     counts = sim.run(pm.run(m), shots=SHOTS, seed_simulator=7).result().get_counts()
     noisy[nl] = analyse4('X', {k: int(v) for k, v in counts.items()})
 json.dump({'exact': exact, 'noisy_kingston': noisy},
-          open('/home/user/synchrotron-24/qpu-bigbang/moissonneur/microscope.json', 'w'), indent=0)
+          open((_RATISS_HOME + '/synchrotron-24/qpu-bigbang/moissonneur/microscope.json'), 'w'), indent=0)
 print('nl | zz_exact zz_noisy | MI_exact MI_noisy | H_exact H_noisy')
 for nl in DEPTHS:
     e, n = exact[nl], noisy[nl]

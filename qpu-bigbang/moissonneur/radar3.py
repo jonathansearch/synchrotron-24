@@ -2,8 +2,10 @@
 # SPDX-License-Identifier: MIT
 """MOISSONNEUR v3 = RADAR : profondeur clinique (mort du signal vs couches).
 lam=0.8 fixe, nl=1..8 + T0 + libre + echo + Page-q3. 23 pubs/ronde x3."""
+import os as _os, pathlib as _pl  # RATISS: chemins portables (dépôts clonés côte à côte, ou RATISS_HOME)
+_RATISS_HOME = _os.environ.get('RATISS_HOME') or str(_pl.Path(__file__).resolve().parents[3])
 import sys
-sys.path.insert(0, '/home/user/synchrotron-24/qpu-bigbang')
+sys.path.insert(0, (_RATISS_HOME + '/synchrotron-24/qpu-bigbang'))
 from batch4 import init_murs, couche, analyse4, SHOTS
 from qiskit import QuantumCircuit
 NLS = [1, 2, 3, 4, 6, 8]

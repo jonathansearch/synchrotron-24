@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
 """Tire moisson 2 sur 1 backend (argv). Chaine gloutonne deterministe + log."""
+import os as _os, pathlib as _pl  # RATISS: chemins portables (dépôts clonés côte à côte, ou RATISS_HOME)
+_RATISS_HOME = _os.environ.get('RATISS_HOME') or str(_pl.Path(__file__).resolve().parents[3])
+import os as _os, pathlib as _pl  # RATISS: chemins portables (dépôts clonés côte à côte, ou RATISS_HOME)
+_RATISS_HOME = _os.environ.get('RATISS_HOME') or str(_pl.Path(__file__).resolve().parents[3])
 import json, os, sys
 import numpy as np
-sys.path.insert(0, '/home/user/synchrotron-24/qpu-bigbang')
-sys.path.insert(0, '/home/user/synchrotron-24/qpu-bigbang/moissonneur')
+sys.path.insert(0, (_RATISS_HOME + '/synchrotron-24/qpu-bigbang'))
+sys.path.insert(0, (_RATISS_HOME + '/synchrotron-24/qpu-bigbang/moissonneur'))
 from harvest2 import build_harvest2
 from batch4 import analyse4, page_S_mit, SHOTS
 from qiskit_ibm_runtime import QiskitRuntimeService, Sampler
@@ -53,7 +57,7 @@ for nom, qc in pubs:
     tc.append((nom, t, mp))
 print(f'{len(tc)} pubs transpilees, layout={meth}, ex={tc[0][2]}', flush=True)
 job = Sampler(mode=be).run([c for _, c, _ in tc], shots=SHOTS)
-open(f'/home/user/synchrotron-24/qpu-bigbang/moissonneur/job_h2_{BE}.txt', 'w').write(f'{job.job_id()} {be.name}')
+open(f'{_RATISS_HOME}/synchrotron-24/qpu-bigbang/moissonneur/job_h2_{BE}.txt', 'w').write(f'{job.job_id()} {be.name}')
 print('JOB:', job.job_id(), flush=True)
 try:
     res = job.result(timeout=1550)
@@ -70,7 +74,7 @@ for r in range(5):
         c0, c1 = R[f'R{r}-CALq3-0']['counts'], R[f'R{r}-CALq3-1']['counts']
         R[f'R{r}-PAGE-q3-{tm}'] = {'S_mit': round(page_S_mit(g('Z'), g('X'), g('Y'), c0, c1), 3)}
 json.dump({'backend': be.name, 'job': job.job_id(), 'chaine': chain, 'cprops': cprops, 'R': R},
-          open(f'/home/user/synchrotron-24/qpu-bigbang/moissonneur/moisson2_{BE}.json', 'w'), indent=0)
+          open(f'{_RATISS_HOME}/synchrotron-24/qpu-bigbang/moissonneur/moisson2_{BE}.json', 'w'), indent=0)
 print(f'--- {BE} ---')
 for nom in ['T0-init'] + [f'T2-l{int(l*10)}' for l in (0.4, 0.6, 0.8, 1.0, 1.2, 1.4, 1.6)] + ['CTRL-libre', 'ECHO-mid']:
     zz = [R[f'R{r}-{nom}']['zz_contact'] for r in range(5)]

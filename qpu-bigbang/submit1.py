@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
 """Tire batch1 sur vrai QPU IBM. Clé via env IBM_TOKEN (jamais sur disque)."""
+import os as _os, pathlib as _pl  # RATISS: chemins portables (dépôts clonés côte à côte, ou RATISS_HOME)
+_RATISS_HOME = _os.environ.get('RATISS_HOME') or str(_pl.Path(__file__).resolve().parents[2])
 import json, os, sys
-sys.path.insert(0, '/home/user/qpu-bigbang')
+sys.path.insert(0, (_RATISS_HOME + '/synchrotron-24/qpu-bigbang'))
 from batch1 import build_batch, analyse, SHOTS
 from qiskit_ibm_runtime import QiskitRuntimeService, Sampler
 from qiskit.transpiler.preset_passmanagers import generate_preset_pass_manager
@@ -23,7 +25,7 @@ for n, qc in circs:
     n2q = sum(1 for i in qc.data if len(i.qubits) == 2)
     print(f'  {n}: depth={qc.depth()} 2q={n2q}', flush=True)
 job = Sampler(mode=be).run([c for _, c in circs], shots=SHOTS)
-open('/home/user/qpu-bigbang/job1_id.txt', 'w').write(f'{job.job_id()} {be.name}')
+open((_RATISS_HOME + '/synchrotron-24/qpu-bigbang/job1_id.txt'), 'w').write(f'{job.job_id()} {be.name}')
 print('JOB:', job.job_id(), flush=True)
 try:
     res = job.result(timeout=1550)
@@ -36,7 +38,7 @@ for (nom, _), pub in zip(circs, res):
     counts = pub.data[list(pub.data)[0]].get_counts()
     out[nom] = {'counts': {k: int(v) for k, v in counts.items()},
                 **analyse(nom, counts)}
-json.dump(out, open('/home/user/qpu-bigbang/qpu_batch1.json', 'w'), indent=1)
+json.dump(out, open((_RATISS_HOME + '/synchrotron-24/qpu-bigbang/qpu_batch1.json'), 'w'), indent=1)
 print(f"--- QPU {be.name} ---")
 for nom, a in out.items():
     print(f"{nom:16s} {a}")

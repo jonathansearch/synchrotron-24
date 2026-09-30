@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
 """Tire batch4 (collisionneur, 29 pubs) en 1 job. Layout fixe. Cle env."""
+import os as _os, pathlib as _pl  # RATISS: chemins portables (dépôts clonés côte à côte, ou RATISS_HOME)
+_RATISS_HOME = _os.environ.get('RATISS_HOME') or str(_pl.Path(__file__).resolve().parents[3])
 import json, os, sys
 import numpy as np
-sys.path.insert(0, '/home/user/synchrotron-24/qpu-bigbang')
+sys.path.insert(0, (_RATISS_HOME + '/synchrotron-24/qpu-bigbang'))
 from batch4 import (build_batch4, analyse4, page_S, page_S_mit, beta1_hamming,
                     hellinger, SHOTS)
 from qiskit_ibm_runtime import QiskitRuntimeService, Sampler
@@ -65,7 +67,7 @@ for w, lst in groups.items():
         tc.append((nom, t))
         print(f'  {nom}: depth={t.depth()} 2q={n2q}', flush=True)
 job = Sampler(mode=be).run([c for _, c in tc], shots=SHOTS)
-open('/home/user/synchrotron-24/qpu-bigbang/job4_id.txt', 'w').write(
+open((_RATISS_HOME + '/synchrotron-24/qpu-bigbang/job4_id.txt'), 'w').write(
     f'{job.job_id()} {be.name}')
 print('JOB:', job.job_id(), flush=True)
 try:
@@ -95,5 +97,5 @@ for tm in ('t0', 'mid', 'brutal'):
         row.append((round(page_S(g('Z'), g('X'), g('Y')), 3),
                     round(page_S_mit(g('Z'), g('X'), g('Y'), c0c, c1c), 3)))
     print(f'Page(raw,mit) {tm}: q0={row[0]} q3={row[1]}')
-json.dump(out, open('/home/user/synchrotron-24/qpu-bigbang/qpu_batch4.json', 'w'), indent=0)
+json.dump(out, open((_RATISS_HOME + '/synchrotron-24/qpu-bigbang/qpu_batch4.json'), 'w'), indent=0)
 print('[qpu4] ok')

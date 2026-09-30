@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
 """Tire batch2 (28 pubs, TOUT le programme) en 1 job QPU. Cle via env IBM_TOKEN."""
+import os as _os, pathlib as _pl  # RATISS: chemins portables (dépôts clonés côte à côte, ou RATISS_HOME)
+_RATISS_HOME = _os.environ.get('RATISS_HOME') or str(_pl.Path(__file__).resolve().parents[2])
 import json, os, sys
 import numpy as np
-sys.path.insert(0, '/home/user/qpu-bigbang')
+sys.path.insert(0, (_RATISS_HOME + '/synchrotron-24/qpu-bigbang'))
 from batch2 import build_batch2, analyse2, page_S, SHOTS
 from qiskit_ibm_runtime import QiskitRuntimeService, Sampler
 from qiskit.transpiler.preset_passmanagers import generate_preset_pass_manager
@@ -26,7 +28,7 @@ for n, qc in tc:
               and i.operation.name != 'barrier')
     print(f'  {n}: depth={qc.depth()} 2q={n2q}', flush=True)
 job = Sampler(mode=be).run([c for _, c in tc], shots=SHOTS)
-open('/home/user/qpu-bigbang/job2_id.txt', 'w').write(f'{job.job_id()} {be.name}')
+open((_RATISS_HOME + '/synchrotron-24/qpu-bigbang/job2_id.txt'), 'w').write(f'{job.job_id()} {be.name}')
 print('JOB:', job.job_id(), flush=True)
 try:
     res = job.result(timeout=1550)
@@ -53,7 +55,7 @@ try:
     out['_mur'] = {'corr': round(float(np.corrcoef(mv, mur)[0, 1]), 3)}
 except Exception as e:
     out['_mur'] = {'erreur': str(e)}
-json.dump(out, open('/home/user/qpu-bigbang/qpu_batch2.json', 'w'), indent=0)
+json.dump(out, open((_RATISS_HOME + '/synchrotron-24/qpu-bigbang/qpu_batch2.json'), 'w'), indent=0)
 print(f"--- QPU {be.name} ---")
 for nom, a in out.items():
     if not nom.startswith('_'):
